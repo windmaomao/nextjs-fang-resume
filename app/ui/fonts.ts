@@ -6,6 +6,6 @@ export const lusitana = Lusitana({
   subsets: ['latin'],
 });
 export const lemonade = Lemonada({
-  weight: ['400'],
+  weight: ['400', '700'],
   subsets: ['latin'],
 });
