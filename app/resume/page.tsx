@@ -32,12 +32,37 @@ export default async function Page() {
       <div className='w-full bg-gray-100 p-6'>
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
-          <div className='my-4 flex flex-row justify-around'>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
+          <div className='my-8 flex flex-row justify-around items-center'>
+            <Image
+              src='/resume/contact-linkedin.png'
+              width={93}
+              height={24}
+              alt='Contact Linkedin'
+            />
+            <Image
+              src='/resume/contact-medium.png'
+              width={90}
+              height={24}
+              alt='Contact Medium'
+            />
+            <Image
+              src='/resume/contact-amazon.png'
+              width={85}
+              height={36}
+              alt='Contact Amazon'
+            />
+            <Image
+              src='/resume/contact-codepen.png'
+              width={106}
+              height={20}
+              alt='Contact Codepen'
+            />
+            <Image
+              src='/resume/contact-stackoverflow.png'
+              width={114}
+              height={30}
+              alt='Contact Stackoverflow'
+            />
           </div>
         </div>
       </div>
