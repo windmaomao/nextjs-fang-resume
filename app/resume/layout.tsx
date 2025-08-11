@@ -5,9 +5,5 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className='flex h-screen flex-col items-center'>
-      <div className={lemonade.className}>{children}</div>
-    </div>
-  );
+  return <div className={lemonade.className}>{children}</div>;
 }
