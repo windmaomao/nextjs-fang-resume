@@ -82,7 +82,7 @@ export default async function ResumePage() {
             width={572}
             height={337}
             className='w-full sm:w-3/5'
-            alt='Screenshots of the dashboard project showing desktop version'
+            alt='Screenshots of the user story project showing sophia profile'
           />
         </div>
       </div>
@@ -93,7 +93,7 @@ export default async function ResumePage() {
             width={630}
             height={441}
             className='w-full sm:w-3/5'
-            alt='Screenshots of the dashboard project showing desktop version'
+            alt='Screenshots of the prototype workflow showing a movie site project'
           />
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
             <div className='text-white text-sm font-light'>
@@ -105,6 +105,23 @@ export default async function ResumePage() {
               <span>Painpoints</span>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='p-6 md:max-w-[1024px] md:mx-auto'>
+        <div className='flex flex-col items-center gap-8'>
+          <p className='font-light text-sm'>Build Product</p>
+          <div className='flex flex-col items-center gap-4 font-semibold text-3xl'>
+            <span>Want To Know How To</span>
+            <span>Turn Your Idea</span>
+            <span>Into A Product</span>
+          </div>
+          <button>Read More</button>
+          <Image
+            src='/resume/build-product.jpg'
+            width={644}
+            height={322}
+            alt='Screenshots of the build product picture with dad and daughter saying hi'
+          />
         </div>
       </div>
     </div>
