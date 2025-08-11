@@ -69,12 +69,12 @@ export default async function ResumePage() {
       </div>
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
-          <div className='w-full sm:w-2/5 flex flex-col gap-8'>
+          <div className='w-full sm:w-2/5 flex flex-col gap-4'>
             <div className='text-sm font-light'>Research Customers</div>
-            <div className='text-2xl/10 font-semibold flex flex-col'>
-              <span>Empathize your users</span>
-              <span>And share with their</span>
-              <span>Goals and Frustrations</span>
+            <div className='text-2xl font-semibold flex flex-col gap-4'>
+              <span>Empathize Your Users</span>
+              <span>And Share With Their</span>
+              <span>Goals And Frustrations</span>
             </div>
           </div>
           <Image
@@ -84,6 +84,27 @@ export default async function ResumePage() {
             className='w-full sm:w-3/5'
             alt='Screenshots of the dashboard project showing desktop version'
           />
+        </div>
+      </div>
+      <div className='px-6 py-32 bg-gradient-to-r from-blue-600 to-purple-500'>
+        <div className='flex flex-col sm:flex-row justify-around items-center gap-12'>
+          <Image
+            src='/resume/prototype-workflow.png'
+            width={630}
+            height={441}
+            className='w-full sm:w-3/5'
+            alt='Screenshots of the dashboard project showing desktop version'
+          />
+          <div className='w-full sm:w-2/5 flex flex-col gap-4'>
+            <div className='text-white text-sm font-light'>
+              Prototype Workflow
+            </div>
+            <div className='text-white text-2xl font-semibold flex flex-col gap-4'>
+              <span>Design Functionalities</span>
+              <span>And Resolve User</span>
+              <span>Painpoints</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
