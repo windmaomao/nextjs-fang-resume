@@ -4,9 +4,15 @@ import Logo from './logo';
 
 export default async function ResumePage() {
   return (
-    <div className='flex flex-col gap-4 md:gap-16'>
-      <div className='p-6'>
-        <Logo />
+    <div className='flex flex-col gap-4'>
+      <div className='p-6 md:w-[1024px] md:mx-auto'>
+        <div className='flex justify-between'>
+          <Logo />
+          <div className='flex gap-8'>
+            <span className='font-semibold'>Home</span>
+            <span className='font-light'>About Me</span>
+          </div>
+        </div>
       </div>
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
@@ -122,6 +128,24 @@ export default async function ResumePage() {
             height={322}
             alt='Screenshots of the build product picture with dad and daughter saying hi'
           />
+        </div>
+      </div>
+      <div className='p-6 md:w-[1024px] md:mx-auto'>
+        <div className='flex flex-col sm:flex-row justify-between gap-4'>
+          <div className='flex gap-24'>
+            <Logo />
+            <div className='flex flex-col gap-8'>
+              <div className='font-semibold'>SITE</div>
+              <div className={lusitana.className + ` flex flex-col gap-2`}>
+                <span>Home</span>
+                <span>About Me</span>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col gap-4'>
+            <div className='font-semibold text-right'>JOIN MY NEWSLETTER</div>
+            <input />
+          </div>
         </div>
       </div>
     </div>
