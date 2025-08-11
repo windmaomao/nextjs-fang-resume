@@ -24,7 +24,7 @@ export default async function ResumePage() {
             alt='Screenshots of the dashboard project showing desktop version'
           />
           <div className='w-full sm:w-2/5 flex flex-col gap-8'>
-            <div className='text-4xl/10 font-bold'>
+            <div className='text-4xl font-bold leading-[48px]'>
               Build app with Confidence
             </div>
             <div className={`${lusitana.className} text-md`}>
@@ -73,7 +73,7 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
-      <div className='p-6 md:w-[1024px] md:mx-auto'>
+      <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
             <div className='text-sm font-light'>Research Customers</div>
@@ -92,8 +92,8 @@ export default async function ResumePage() {
           />
         </div>
       </div>
-      <div className='px-6 py-32 bg-gradient-to-r from-blue-600 to-purple-500'>
-        <div className='flex flex-col sm:flex-row justify-around items-center gap-12'>
+      <div className='px-6 py-28 bg-gradient-to-r from-blue-600 to-purple-500'>
+        <div className='md:w-[1024px] md:mx-auto flex flex-col sm:flex-row justify-around items-center gap-12'>
           <Image
             src='/resume/prototype-workflow.png'
             width={630}
@@ -113,10 +113,10 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
-      <div className='p-6 md:max-w-[1024px] md:mx-auto'>
+      <div className='p-6 py-12 md:max-w-[1024px] md:mx-auto'>
         <div className='flex flex-col items-center gap-8'>
           <p className='font-light text-sm'>Build Product</p>
-          <div className='flex flex-col items-center gap-4 font-semibold text-3xl'>
+          <div className='flex flex-col items-center gap-3 font-semibold text-3xl'>
             <span>Want To Know How To</span>
             <span>Turn Your Idea</span>
             <span>Into A Product</span>
