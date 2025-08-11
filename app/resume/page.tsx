@@ -2,13 +2,13 @@ import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Logo from './logo';
 
-export default async function Page() {
+export default async function ResumePage() {
   return (
     <div className='flex flex-col items-center'>
       <div className='p-6 self-start'>
         <Logo />
       </div>
-      <div className='px-6 md:mx-auto md:max-w-[1024px]'>
+      <div className='p-6 md:mx-auto md:max-w-[1024px]'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <Image
             src='/resume/hero-desktop.png'
@@ -21,7 +21,7 @@ export default async function Page() {
             <div className='text-4xl/10 font-bold'>
               Build app with Confidence
             </div>
-            <div className={`${lusitana.className} text-md`}>
+            <div className={`${lusitana.className} text-md mb-6`}>
               My name is Fang, 90% UI engineer and 10% UX designer. I build a
               site with precision and confidence. Checkout my case studies
               below.
@@ -29,10 +29,10 @@ export default async function Page() {
           </div>
         </div>
       </div>
-      <div className='w-full bg-gray-100 p-6'>
+      <div className='w-full p-6 bg-gray-100'>
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
-          <div className='my-8 flex flex-row justify-around items-center'>
+          <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-8'>
             <Image
               src='/resume/contact-linkedin.png'
               width={93}
@@ -50,6 +50,7 @@ export default async function Page() {
               width={85}
               height={36}
               alt='Contact Amazon'
+              className='pt-2'
             />
             <Image
               src='/resume/contact-codepen.png'
