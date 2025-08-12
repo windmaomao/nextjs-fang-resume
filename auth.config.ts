@@ -6,6 +6,9 @@ export const authConfig = {
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
+      const isOnPublic = nextUrl.pathname.startsWith('/resume');
+      if (isOnPublic) return true;
+
       const isLoggedIn = !!auth?.user;
       const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
       if (isOnDashboard) {
