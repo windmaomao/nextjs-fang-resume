@@ -39,37 +39,67 @@ export default async function ResumePage() {
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
           <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-8'>
-            <Image
-              src='/resume/contact-linkedin.png'
-              width={93}
-              height={24}
-              alt='Contact Linkedin'
-            />
-            <Image
-              src='/resume/contact-medium.png'
-              width={90}
-              height={24}
-              alt='Contact Medium'
-            />
-            <Image
-              src='/resume/contact-amazon.png'
-              width={85}
-              height={36}
-              alt='Contact Amazon'
-              className='pt-2'
-            />
-            <Image
-              src='/resume/contact-codepen.png'
-              width={106}
-              height={20}
-              alt='Contact Codepen'
-            />
-            <Image
-              src='/resume/contact-stackoverflow.png'
-              width={114}
-              height={30}
-              alt='Contact Stackoverflow'
-            />
+            <a
+              href='https://www.linkedin.com/in/windmaomao/'
+              target='_blank'
+              title='LinkedIn profile'
+            >
+              <Image
+                src='/resume/contact-linkedin.png'
+                width={93}
+                height={24}
+                alt='Contact Linkedin'
+              />
+            </a>
+            <a
+              href='https://medium.com/@windmaomao'
+              target='_blank'
+              title='Medium profile'
+            >
+              <Image
+                src='/resume/contact-medium.png'
+                width={90}
+                height={24}
+                alt='Contact Medium'
+              />
+            </a>
+            <a
+              href='https://www.amazon.com/stores/Fang-Jin/author/B09M7FFMJP'
+              target='_blank'
+              title='Amazon profile'
+            >
+              <Image
+                src='/resume/contact-amazon.png'
+                width={85}
+                height={36}
+                alt='Contact Amazon'
+                className='pt-2'
+              />
+            </a>
+            <a
+              href='https://codepen.io/windmaomao'
+              target='_blank'
+              title='Codepen profile'
+            >
+              <Image
+                src='/resume/contact-codepen.png'
+                width={106}
+                height={20}
+                alt='Contact Codepen'
+              />
+            </a>
+            <a
+              href='https://stackoverflow.com/users/288096/windmaomao'
+              target='_blank'
+              title='Stackoverflow profile'
+            >
+              <Image
+                src='/resume/contact-stackoverflow.png'
+                width={114}
+                height={30}
+                alt='Contact Stackoverflow'
+              />
+            </a>
           </div>
         </div>
       </div>
