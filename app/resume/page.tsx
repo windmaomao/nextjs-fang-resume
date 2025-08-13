@@ -31,9 +31,11 @@ export default async function ResumePage() {
             </div>
             <div className={`${lusitana.className} text-md`}>
               My name is Fang, 90% UI engineer and 10% UX designer. I build a
-              site with precision and confidence. Checkout my case studies
-              below.
+              site with precision and confidence.
             </div>
+            <p className='text-xs font-light text-gray-300'>
+              (Under construction)
+            </p>
           </div>
         </div>
       </div>
@@ -204,6 +206,37 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
+      {/* Awards */}
+      <div className='p-6 md:w-[1024px] md:mx-auto'>
+        <div className='text-2xl font-bold leading-[48px]'>Awards</div>
+        <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
+          <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+            <div
+              className={`${lusitana.className} text-md flex flex-col gap-8`}
+            >
+              <p className='text-lg font-semibold'>
+                <a
+                  href='https://www.coursera.org/account/accomplishments/specialization/certificate/DRXGLEY7ZQZ6'
+                  target='_blank'
+                  title='Google UX Certification'
+                >
+                  UX Design Professional Certificate Google - July 2022
+                </a>
+              </p>
+              <p>Highly Commended Award Credit Suisse - Dec 2019</p>
+              <p>Recognition Award Deutsche Bank - Jan 2017</p>
+            </div>
+          </div>
+          <Image
+            src='/resume/google-ux.jpg'
+            width={518}
+            height={344}
+            className='w-full sm:w-2/5'
+            alt='Screenshots of the dashboard project showing desktop version'
+          />
+        </div>
+      </div>
+      {/* Publisher */}
       <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
