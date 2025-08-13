@@ -8,10 +8,10 @@ export default async function ResumePage() {
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between'>
           <Logo />
-          <div className='flex gap-8'>
+          {/* <div className='flex gap-8'>
             <span className='font-semibold'>Home</span>
-            <span className='font-light'>About Me</span>
-          </div>
+            <span className='font-light'>Services</span>
+          </div> */}
         </div>
       </div>
       <div className='p-6 md:w-[1024px] md:mx-auto'>
@@ -103,6 +103,69 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
+      <div className='px-6 py-16 md:w-[1024px] md:mx-auto'>
+        <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
+          <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+            <div className='text-4xl font-bold leading-[48px]'>
+              Front-end Engineer
+            </div>
+            <div className={`${lusitana.className} text-md`}>
+              <ul className='list-disc'>
+                <li>
+                  Specialize in <i>JavaScript</i>, <i>Typescript</i>, and{' '}
+                  <b>
+                    <i>React</i>
+                  </b>
+                </li>
+                <li>
+                  Efficient and accurate work using{' '}
+                  <b>
+                    <i>Figma</i>
+                  </b>
+                </li>
+                <li>
+                  Multiple regions or languages support with{' '}
+                  <b>
+                    <i></i>i18n
+                  </b>
+                </li>
+                <li>
+                  Author of book: “Designing React Hooks the right way” sold at
+                  amazon.
+                </li>
+                <li>Author of book: “Think in Recursion” sold at amazon.</li>
+                <li>
+                  Familiar with state management systems ex. Zustand, Redux and
+                  React Query.
+                </li>
+                <li>
+                  Create reusable UI library for the company design system (with
+                  tokens generation)
+                </li>
+                <li>
+                  Create custom dashboard charting using D3, Visx that
+                  integrates with React
+                </li>
+                <li>
+                  Provide technical oversight and guidance to teams, ensuring
+                  alignment with project convention.
+                </li>
+                <li>
+                  Extensive usage of storybook with the designer or shareholders
+                  on a daily basis to meet the design requirement.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <Image
+            src='/resume/frontend-engineer.png'
+            width={445}
+            height={318}
+            className='w-full sm:w-2/5'
+            alt='Screenshots of the dashboard project showing desktop version'
+          />
+        </div>
+      </div>
       <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
@@ -115,8 +178,8 @@ export default async function ResumePage() {
           </div>
           <Image
             src='/resume/user-story.png'
-            width={572}
-            height={337}
+            width={445}
+            height={318}
             className='w-full sm:w-3/5'
             alt='Screenshots of the user story project showing sophia profile'
           />
