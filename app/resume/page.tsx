@@ -177,16 +177,29 @@ export default async function ResumePage() {
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Education</div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
-            <Image
-              src='/resume/jhu-logo.png'
-              width={434}
-              height={180}
-              className='w-full sm:w-2/5'
-              alt='Screenshots of the user story project showing sophia profile'
-            />
+            <div className='w-full sm:w-2/5'>
+              <a
+                href='https://engineering.jhu.edu/chembe/'
+                target='_blank'
+                title='JHU Chemical Engineering'
+              >
+                <Image
+                  src='/resume/jhu-logo.png'
+                  width={434}
+                  height={180}
+                  alt='Screenshots of the user story project showing sophia profile'
+                />
+              </a>
+            </div>
             <div className='w-full sm:w-3/5 flex flex-col gap-6'>
               <div className='font-semibold'>
-                Johns Hopkins University, 2000 - 2007
+                <a
+                  href='https://engineering.jhu.edu/chembe/'
+                  target='_blank'
+                  title='JHU Chemical Engineering'
+                >
+                  Johns Hopkins University, 2000 - 2007
+                </a>
               </div>
               <div
                 className={`${lusitana.className} + ' font-light flex flex-col gap-4`}
@@ -227,16 +240,80 @@ export default async function ResumePage() {
               <p>Recognition Award Deutsche Bank - Jan 2017</p>
             </div>
           </div>
-          <Image
-            src='/resume/google-ux.jpg'
-            width={518}
-            height={344}
-            className='w-full sm:w-2/5'
-            alt='Screenshots of the dashboard project showing desktop version'
-          />
+          <div className='w-full sm:w-2/5'>
+            <a
+              href='https://www.coursera.org/account/accomplishments/specialization/certificate/DRXGLEY7ZQZ6'
+              target='_blank'
+              title='Google UX Certification'
+            >
+              <Image
+                src='/resume/google-ux.jpg'
+                width={518}
+                height={344}
+                alt='Screenshots of the dashboard project showing desktop version'
+              />
+            </a>
+          </div>
         </div>
       </div>
-      {/* Publisher */}
+      {/* Publications */}
+      <div className='px-6 py-12 bg-gray-100'>
+        <div className='w-full md:mx-auto md:max-w-[1024px]'>
+          <div className='text-xl font-bold'>Publications</div>
+          <div className='mt-8 flex flex-col sm:flex-row justify-around items-center gap-8'>
+            <div className='w-full sm:w-2/5 flex gap-8'>
+              <a
+                href='https://www.amazon.com/Designing-React-Hooks-Right-Way-ebook/dp/B09LYZMN16'
+                target='_blank'
+                title='Designing React Hooks book'
+              >
+                <Image
+                  src='/resume/react-book.jpg'
+                  width={153}
+                  height={188}
+                  alt='Screenshots of the dashboard project showing desktop version'
+                />
+              </a>
+              <a
+                href='https://www.amazon.com/Think-Recursion-Algorithmic-Programming-algorithms-ebook/dp/B0DDH9TYYJ'
+                target='_blank'
+                title='Think in Recursion book'
+              >
+                <Image
+                  src='/resume/recursion-book.jpg'
+                  width={143}
+                  height={191}
+                  alt='Screenshots of the dashboard project showing desktop version'
+                />
+              </a>
+            </div>
+            <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+              <div
+                className={`${lusitana.className} text-md flex flex-col gap-8`}
+              >
+                <p>
+                  <a
+                    href='https://www.amazon.com/Think-Recursion-Algorithmic-Programming-algorithms-ebook/dp/B0DDH9TYYJ'
+                    target='_blank'
+                    title='Think in Recursion book'
+                  >
+                    Think in Recursion, BPB – Jul 2023
+                  </a>
+                </p>
+                <p className='text-lg font-semibold'>
+                  <a
+                    href='https://www.amazon.com/Designing-React-Hooks-Right-Way-ebook/dp/B09LYZMN16'
+                    target='_blank'
+                    title='Designing React Hooks book'
+                  >
+                    Designing React Hooks the Right Way, Packt – Jan 2022
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
