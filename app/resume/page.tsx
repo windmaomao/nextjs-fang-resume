@@ -5,6 +5,7 @@ import Logo from './logo';
 export default async function ResumePage() {
   return (
     <div className='flex flex-col gap-4'>
+      {/* Logo and menu */}
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between'>
           <Logo />
@@ -14,6 +15,7 @@ export default async function ResumePage() {
           </div> */}
         </div>
       </div>
+      {/* Hero section */}
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <Image
@@ -35,6 +37,7 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
+      {/* Find me at */}
       <div className='p-6 bg-gray-100'>
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
@@ -103,6 +106,7 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
+      {/* Frontend engineer */}
       <div className='px-6 py-16 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-3/5 flex flex-col gap-8'>
@@ -164,6 +168,40 @@ export default async function ResumePage() {
             className='w-full sm:w-2/5'
             alt='Screenshots of the dashboard project showing desktop version'
           />
+        </div>
+      </div>
+      {/* Education */}
+      <div className='p-6 bg-gray-100'>
+        <div className='w-full md:mx-auto md:max-w-[1024px]'>
+          <div className='font-bold'>Education</div>
+          <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
+            <Image
+              src='/resume/jhu-logo.png'
+              width={434}
+              height={180}
+              className='w-full sm:w-2/5'
+              alt='Screenshots of the user story project showing sophia profile'
+            />
+            <div className='w-full sm:w-3/5 flex flex-col gap-6'>
+              <div className='font-semibold'>
+                Johns Hopkins University, 2000 - 2007
+              </div>
+              <div
+                className={`${lusitana.className} + ' font-light flex flex-col gap-4`}
+              >
+                <span>
+                  Major in{' '}
+                  <b>
+                    <i>Bio-molecular chemical engineering</i>
+                  </b>
+                </span>
+                <span>
+                  Designed a scientific computational framework for water
+                  breakage simulation and cancer research simulations.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
