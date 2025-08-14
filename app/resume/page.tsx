@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Logo from './logo';
+import { Keyword } from '@/app/ui/resume';
 
 export default async function ResumePage() {
   return (
@@ -30,12 +31,14 @@ export default async function ResumePage() {
               Build app with Confidence
             </div>
             <div className={`${lusitana.className} text-md`}>
-              My name is Fang, 90% UI engineer and 10% UX designer. I build a
-              site with precision and confidence.
+              My name is Fang, 90% <Keyword>UI</Keyword> engineer and 10%{' '}
+              <Keyword>UX</Keyword> designer. I craft websites and apps with
+              care, precision, and confidence. You can find me from the
+              following social media.
             </div>
-            <p className='text-xs font-light text-gray-300'>
+            {/* <p className='text-xs font-light text-gray-300'>
               (Under construction)
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -118,22 +121,15 @@ export default async function ResumePage() {
             <div className={`${lusitana.className} text-md`}>
               <ul className='list-disc'>
                 <li>
-                  Specialize in <i>JavaScript</i>, <i>Typescript</i>, and{' '}
-                  <b>
-                    <i>React</i>
-                  </b>
+                  Specialize in <Keyword>Javascript</Keyword>,{' '}
+                  <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>
                 </li>
                 <li>
-                  Efficient and accurate work using{' '}
-                  <b>
-                    <i>Figma</i>
-                  </b>
+                  Efficient and accurate work using <Keyword>Figma</Keyword>
                 </li>
                 <li>
                   Multiple regions or languages support with{' '}
-                  <b>
-                    <i></i>i18n
-                  </b>
+                  <Keyword>i18n</Keyword>
                 </li>
                 <li>
                   Author of book: “Designing React Hooks the right way” sold at
@@ -141,24 +137,26 @@ export default async function ResumePage() {
                 </li>
                 <li>Author of book: “Think in Recursion” sold at amazon.</li>
                 <li>
-                  Familiar with state management systems ex. Zustand, Redux and
-                  React Query.
+                  Familiar with state management systems ex.{' '}
+                  <Keyword>Zustand</Keyword>, <Keyword>Redux</Keyword> and
+                  <Keyword>React Query</Keyword>.
                 </li>
                 <li>
                   Create reusable UI library for the company design system (with
                   tokens generation)
                 </li>
                 <li>
-                  Create custom dashboard charting using D3, Visx that
-                  integrates with React
+                  Create custom dashboard charting using <Keyword>D3</Keyword>,{' '}
+                  <Keyword>Visx</Keyword> that integrates with React
                 </li>
                 <li>
                   Provide technical oversight and guidance to teams, ensuring
                   alignment with project convention.
                 </li>
                 <li>
-                  Extensive usage of storybook with the designer or shareholders
-                  on a daily basis to meet the design requirement.
+                  Extensive usage of <Keyword>Storybook</Keyword> with the
+                  designer or shareholders on a daily basis to meet the design
+                  requirement.
                 </li>
               </ul>
             </div>
