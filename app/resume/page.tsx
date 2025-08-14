@@ -1,7 +1,16 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Logo from './logo';
 import { Keyword } from '@/app/ui/resume';
+
+export const metadata: Metadata = {
+  title: 'Fang Jin',
+  description:
+    'I craft websites and apps with care, precision, and confidence.',
+  keywords:
+    'React,NextJS,JavaScript,TypeScript,Figma,CSS,Tailwind,NodeJS,UI/UX Design,Micro Frontend Architecture,Storybook,Cypress Testing,Functional Programming',
+};
 
 export default async function ResumePage() {
   return (
@@ -10,6 +19,11 @@ export default async function ResumePage() {
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between'>
           <Logo />
+          <div className='w-[400px] font-light text-xs text-gray-400'>
+            React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
+            Design Micro Frontend Architecture Storybook Cypress Testing
+            Functional Programming
+          </div>
           {/* <div className='flex gap-8'>
             <span className='font-semibold'>Home</span>
             <span className='font-light'>Services</span>
