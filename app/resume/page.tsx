@@ -424,7 +424,7 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
-      <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
+      {/* <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
             <div className='text-sm font-light'>Research Customers</div>
@@ -463,16 +463,16 @@ export default async function ResumePage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      {/* Build product */}
       <div className='p-6 py-12 md:max-w-[1024px] md:mx-auto'>
         <div className='flex flex-col items-center gap-8'>
-          <p className='font-light text-sm'>Build Product</p>
+          <p className='font-light text-sm'>From scratch</p>
           <div className='flex flex-col items-center gap-3 font-semibold text-3xl'>
             <span>Want To Know How To</span>
             <span>Turn Your Idea</span>
             <span>Into A Product</span>
           </div>
-          <button>Read More</button>
           <Image
             src='/resume/build-product.jpg'
             width={644}
@@ -481,6 +481,7 @@ export default async function ResumePage() {
           />
         </div>
       </div>
+      {/* Footer */}
       <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-between gap-4'>
           <div className='flex gap-24'>
