@@ -326,6 +326,104 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
+      {/* Experiences */}
+      <div className='p-6 py-12 md:w-[1024px] md:mx-auto'>
+        <div className='text-3xl font-bold'>Experiences</div>
+        <div className='container  mx-auto w-full h-full'>
+          <div className='relative wrap overflow-hidden p-10 h-full'>
+            <div
+              className='border-2-2 absolute border-opacity-20 border-gray-700 h-full border'
+              style={{ left: '50%' }}
+            ></div>
+            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+              <div className='order-1 w-5/12'></div>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>24</h1>
+              </div>
+              <div className='order-1 bg-fuchsia-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                  Material Bank (Series-D Startup)
+                </h3>
+                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                  React developer for Amazon like E-commerce site
+                </p>
+                <h4 className='mt-2 font-semibold'>Senior Frontend Engineer</h4>
+                <h4 className='mt-2 text-sm font-light'>Aug 2024 - Aug 2025</h4>
+              </div>
+            </div>
+            <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
+              <div className='order-1 w-5/12'></div>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>23</h1>
+              </div>
+              <div className='order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                  Pearson (Publisher)
+                </h3>
+                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                  React/nextJS lead developer/architect for pearson e-commerce
+                  sites.
+                </p>
+                <h4 className='mt-2 font-semibold'>
+                  Senior Front End Engineer
+                </h4>
+                <h4 className='mt-2 text-sm font-light'>Mar 2023 - May 2024</h4>
+              </div>
+            </div>
+            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+              <div className='order-1 w-5/12'></div>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>21</h1>
+              </div>
+              <div className='order-1 bg-orange-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                  PhysIQ (Series-C startup)
+                </h3>
+                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                  React lead developer for a clinical web portal for collecting
+                  real-time medical data from a physical device.
+                </p>
+                <h4 className='mt-2 font-semibold'>Staff Software Engineer</h4>
+                <h4 className='mt-2 text-sm font-light'>Jun 2021 - Jan 2023</h4>
+              </div>
+            </div>
+            <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
+              <div className='order-1 w-5/12'></div>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>19</h1>
+              </div>
+              <div className='order-1 bg-red-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                  Credit Suisse (Bank)
+                </h3>
+                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                  Lead and manager of team for React based compliance website,
+                  mainly focus on reusability and scalability.
+                </p>
+                <h4 className='mt-2 font-semibold'>AVP, Senior Frontend</h4>
+                <h4 className='mt-2 text-sm font-light'>Jan 2019 - Jun 2021</h4>
+              </div>
+            </div>
+            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+              <div className='order-1 w-5/12'></div>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>16</h1>
+              </div>
+              <div className='order-1 bg-indigo-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                  Deutsche Bank
+                </h3>
+                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                  UI and Angular architect in Market Clearing domain for 45+
+                  banking applications.
+                </p>
+                <h4 className='mt-2 font-semibold'>Senior Frontend</h4>
+                <h4 className='mt-2 text-sm font-light'>Sep 2016 - Aug 2018</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
