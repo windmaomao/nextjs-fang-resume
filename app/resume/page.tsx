@@ -337,13 +337,13 @@ export default async function ResumePage() {
             ></div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+              <div className='z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2024
                 </h1>
               </div>
               <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                   Material Bank (Series-D Startup)
                 </h3>
                 <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
@@ -355,13 +355,13 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+              <div className='z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2023
                 </h1>
               </div>
               <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                   Pearson (Publisher)
                 </h3>
                 <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
@@ -376,13 +376,13 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+              <div className='z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2021
                 </h1>
               </div>
               <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                   PhysIQ (Series-C startup)
                 </h3>
                 <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
@@ -395,13 +395,13 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+              <div className='z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2019
                 </h1>
               </div>
               <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                   Credit Suisse (Bank)
                 </h3>
                 <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
@@ -414,13 +414,13 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+              <div className='z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2016
                 </h1>
               </div>
               <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-xl'>
+                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                   Deutsche Bank
                 </h3>
                 <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
@@ -474,15 +474,15 @@ export default async function ResumePage() {
           </div>
         </div>
       </div> */}
-      {/* Build product */}
-      <div className='p-6 py-12 md:max-w-[1024px] md:mx-auto'>
+      {/* Say bye */}
+      <div className='px-6 pb-12 md:max-w-[1024px] md:mx-auto'>
         <div className='flex flex-col items-center gap-8'>
-          <p className='font-light text-sm'>From scratch</p>
+          {/* <p className='font-light text-sm'>From scratch</p>
           <div className='flex flex-col items-center gap-3 font-semibold text-3xl'>
             <span>Want To Know How To</span>
             <span>Turn Your Idea</span>
             <span>Into A Product</span>
-          </div>
+          </div> */}
           <Image
             src='/resume/build-product.jpg'
             width={644}
@@ -492,7 +492,7 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Footer */}
-      <div className='p-6 md:w-[1024px] md:mx-auto'>
+      {/* <div className='p-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-between gap-4'>
           <div className='flex gap-24'>
             <Logo />
@@ -509,7 +509,7 @@ export default async function ResumePage() {
             <input />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
