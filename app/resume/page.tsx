@@ -337,10 +337,12 @@ export default async function ResumePage() {
             ></div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>24</h1>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>
+                  2024
+                </h1>
               </div>
-              <div className='order-1 bg-fuchsia-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
                 <h3 className='mb-3 font-bold text-gray-800 text-xl'>
                   Material Bank (Series-D Startup)
                 </h3>
@@ -353,10 +355,12 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>23</h1>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>
+                  2023
+                </h1>
               </div>
-              <div className='order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
                 <h3 className='mb-3 font-bold text-gray-800 text-xl'>
                   Pearson (Publisher)
                 </h3>
@@ -372,10 +376,12 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>21</h1>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>
+                  2021
+                </h1>
               </div>
-              <div className='order-1 bg-orange-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
                 <h3 className='mb-3 font-bold text-gray-800 text-xl'>
                   PhysIQ (Series-C startup)
                 </h3>
@@ -389,10 +395,12 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>19</h1>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>
+                  2019
+                </h1>
               </div>
-              <div className='order-1 bg-red-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
                 <h3 className='mb-3 font-bold text-gray-800 text-xl'>
                   Credit Suisse (Bank)
                 </h3>
@@ -406,10 +414,12 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>16</h1>
+              <div className='z-20 flex items-center order-1 bg-gray-800 shadow-xl w-20 h-8 rounded-full'>
+                <h1 className='mx-auto font-semibold text-lg text-white'>
+                  2016
+                </h1>
               </div>
-              <div className='order-1 bg-indigo-200 rounded-lg shadow-xl w-5/12 px-6 py-4'>
+              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-5/12 px-6 py-4'>
                 <h3 className='mb-3 font-bold text-gray-800 text-xl'>
                   Deutsche Bank
                 </h3>
