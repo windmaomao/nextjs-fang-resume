@@ -127,53 +127,51 @@ export default async function ResumePage() {
       </div>
       {/* Frontend engineer */}
       <div className='px-6 py-16 md:w-[1024px] md:mx-auto'>
+        <div className='pb-6 text-4xl font-bold leading-[48px]'>
+          Front-end Engineer
+        </div>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-3/5 flex flex-col gap-8'>
-            <div className='text-4xl font-bold leading-[48px]'>
-              Front-end Engineer
-            </div>
-            <div className={`${lusitana.className} text-md px-4`}>
-              <ul className='list-disc'>
-                <li>
-                  Specialize in <Keyword>Javascript</Keyword>,{' '}
-                  <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>
-                </li>
-                <li>
-                  Efficient and accurate work using <Keyword>Figma</Keyword>
-                </li>
-                <li>
-                  Multiple regions or languages support with{' '}
-                  <Keyword>i18n</Keyword>
-                </li>
-                <li>
-                  Author of book: “Designing React Hooks the right way” sold at
-                  amazon.
-                </li>
-                <li>Author of book: “Think in Recursion” sold at amazon.</li>
-                <li>
-                  Familiar with state management systems ex.{' '}
-                  <Keyword>Zustand</Keyword>, <Keyword>Redux</Keyword> and
-                  <Keyword>React Query</Keyword>.
-                </li>
-                <li>
-                  Create reusable UI library for the company design system (with
-                  tokens generation)
-                </li>
-                <li>
-                  Create custom dashboard charting using <Keyword>D3</Keyword>,{' '}
-                  <Keyword>Visx</Keyword> that integrates with React
-                </li>
-                <li>
-                  Provide technical oversight and guidance to teams, ensuring
-                  alignment with project convention.
-                </li>
-                <li>
-                  Extensive usage of <Keyword>Storybook</Keyword> with the
-                  designer or shareholders on a daily basis to meet the design
-                  requirement.
-                </li>
-              </ul>
-            </div>
+            <ul className={`${lusitana.className} text-md px-4 list-disc`}>
+              <li>
+                Specialize in <Keyword>Javascript</Keyword>,{' '}
+                <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>
+              </li>
+              <li>
+                Efficient and accurate work using <Keyword>Figma</Keyword>
+              </li>
+              <li>
+                Multiple regions or languages support with{' '}
+                <Keyword>i18n</Keyword>
+              </li>
+              <li>
+                Author of book: “Designing React Hooks the right way” sold at
+                amazon.
+              </li>
+              <li>Author of book: “Think in Recursion” sold at amazon.</li>
+              <li>
+                Familiar with state management systems ex.{' '}
+                <Keyword>Zustand</Keyword>, <Keyword>Redux</Keyword> and
+                <Keyword>React Query</Keyword>.
+              </li>
+              <li>
+                Create reusable UI library for the company design system (with
+                tokens generation)
+              </li>
+              <li>
+                Create custom dashboard charting using <Keyword>D3</Keyword>,{' '}
+                <Keyword>Visx</Keyword> that integrates with React
+              </li>
+              <li>
+                Provide technical oversight and guidance to teams, ensuring
+                alignment with project convention.
+              </li>
+              <li>
+                Extensive usage of <Keyword>Storybook</Keyword> with the
+                designer or shareholders on a daily basis to meet the design
+                requirement.
+              </li>
+            </ul>
           </div>
           <Image
             src='/resume/frontend-engineer.png'
@@ -187,7 +185,7 @@ export default async function ResumePage() {
       {/* Education */}
       <div className='p-6 bg-gray-100'>
         <div className='w-full md:mx-auto md:max-w-[1024px]'>
-          <div className='font-bold'>Education</div>
+          <div className='font-bold text-xl'>Education</div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-2/5'>
               <a
