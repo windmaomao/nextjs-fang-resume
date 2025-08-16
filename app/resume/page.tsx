@@ -14,33 +14,29 @@ export const metadata: Metadata = {
 
 export default async function ResumePage() {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-6'>
       {/* Logo and menu */}
-      <div className='p-6 md:w-[1024px] md:mx-auto'>
+      <div className='px-6 pt-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between flex-col sm:flex-row gap-4'>
           <Logo />
-          <div className='w-[400px] font-light text-xs text-gray-400'>
+          <div className='w-[400px] font-light text-[10px] text-gray-400 px-2'>
             React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
             Design Micro Frontend Architecture Storybook Cypress Testing
             Functional Programming
           </div>
-          {/* <div className='flex gap-8'>
-            <span className='font-semibold'>Home</span>
-            <span className='font-light'>Services</span>
-          </div> */}
         </div>
       </div>
       {/* Hero section */}
-      <div className='p-6 md:w-[1024px] md:mx-auto'>
+      <div className='px-6 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <Image
             src='/resume/hero-desktop.png'
             width={690}
             height={459}
-            className='w-full sm:w-3/5'
+            className='w-full md:w-3/5'
             alt='Screenshots of the dashboard project showing desktop version'
           />
-          <div className='w-full sm:w-2/5 flex flex-col gap-8'>
+          <div className='w-full md:w-2/5 flex flex-col gap-8'>
             <div className='text-4xl font-bold leading-[48px]'>
               Build app with Confidence
             </div>
@@ -57,10 +53,10 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Find me at */}
-      <div className='p-6 bg-gray-100'>
-        <div className='w-full md:mx-auto md:max-w-[1024px]'>
+      <div className='bg-gray-100'>
+        <div className='p-6 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
-          <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-8'>
+          <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-x-24 gap-y-8'>
             <a
               href='https://www.linkedin.com/in/windmaomao/'
               target='_blank'
@@ -183,8 +179,8 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Education */}
-      <div className='p-6 bg-gray-100'>
-        <div className='w-full md:mx-auto md:max-w-[1024px]'>
+      <div className='bg-gray-100'>
+        <div className='p-6 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold text-xl'>Education</div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-2/5'>
@@ -267,8 +263,8 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Publications */}
-      <div className='px-6 py-12 bg-gray-100'>
-        <div className='w-full md:mx-auto md:max-w-[1024px]'>
+      <div className='bg-gray-100'>
+        <div className='px-6 py-12 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='text-xl font-bold'>Publications</div>
           <div className='mt-8 flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-2/5 flex gap-8'>
@@ -487,10 +483,10 @@ export default async function ResumePage() {
             height={322}
             alt='Screenshots of the build product picture with dad and daughter saying hi'
           />
+          <p className='text-sm text-gray-400 font-light text-center py-4'>
+            See ya and nice to see you this far...
+          </p>
         </div>
-        <p className='text-sm text-gray-400 font-light text-center py-4'>
-          See ya and nice to see you this far...
-        </p>
       </div>
       {/* Footer */}
       {/* <div className='p-6 md:w-[1024px] md:mx-auto'>
