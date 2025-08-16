@@ -327,7 +327,7 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Experiences */}
-      <div className='p-6 py-12 md:w-[1024px] md:mx-auto'>
+      <div className='p-6 pt-12 md:w-[1024px] md:mx-auto'>
         <div className='text-3xl font-bold'>Experiences</div>
         <div>
           <div className='relative wrap overflow-hidden pt-10 h-full'>
@@ -475,7 +475,7 @@ export default async function ResumePage() {
         </div>
       </div> */}
       {/* Say bye */}
-      <div className='px-6 pb-12 md:max-w-[1024px] md:mx-auto'>
+      <div className='pb-12 md:max-w-[1024px] md:mx-auto'>
         <div className='flex flex-col items-center gap-8'>
           {/* <p className='font-light text-sm'>From scratch</p>
           <div className='flex flex-col items-center gap-3 font-semibold text-3xl'>
@@ -490,6 +490,9 @@ export default async function ResumePage() {
             alt='Screenshots of the build product picture with dad and daughter saying hi'
           />
         </div>
+        <p className='text-sm text-gray-400 font-light text-center py-4'>
+          See ya and nice to see you this far...
+        </p>
       </div>
       {/* Footer */}
       {/* <div className='p-6 md:w-[1024px] md:mx-auto'>
