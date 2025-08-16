@@ -17,7 +17,7 @@ export default async function ResumePage() {
     <div className='flex flex-col gap-4'>
       {/* Logo and menu */}
       <div className='p-6 md:w-[1024px] md:mx-auto'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between flex-col sm:flex-row gap-4'>
           <Logo />
           <div className='w-[400px] font-light text-xs text-gray-400'>
             React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
@@ -132,7 +132,7 @@ export default async function ResumePage() {
             <div className='text-4xl font-bold leading-[48px]'>
               Front-end Engineer
             </div>
-            <div className={`${lusitana.className} text-md`}>
+            <div className={`${lusitana.className} text-md px-4`}>
               <ul className='list-disc'>
                 <li>
                   Specialize in <Keyword>Javascript</Keyword>,{' '}
