@@ -6,7 +6,7 @@ export default async function Logo() {
       <motion.div
         className='text-violet-500'
         animate={{ x: 5 }}
-        transition={{ delay: 0.1, duration: 0.8 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
       >
         Q
       </motion.div>
