@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
-import Logo from './logo';
+import { Logo } from './components';
 import { Keyword } from '@/app/ui/resume';
 
 export const metadata: Metadata = {
