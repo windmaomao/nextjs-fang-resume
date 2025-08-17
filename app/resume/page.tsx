@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import { Logo } from './components';
-import { Keyword } from '@/app/ui/resume';
+import { Keyword } from './components';
 
 export const metadata: Metadata = {
   title: 'Fang Jin',
