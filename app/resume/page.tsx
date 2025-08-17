@@ -16,10 +16,10 @@ export default async function ResumePage() {
   return (
     <div className='flex flex-col gap-6'>
       {/* Logo and menu */}
-      <div className='px-6 pt-6 md:w-[1024px] md:mx-auto'>
+      <div className='px-4 pt-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between flex-col sm:flex-row gap-4'>
           <Logo />
-          <div className='w-[400px] font-light text-[10px] text-gray-400 px-2'>
+          <div className='max-w-[400px] font-light text-[10px] text-gray-400 px-2'>
             React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
             Design Micro Frontend Architecture Storybook Cypress Testing
             Functional Programming
@@ -27,7 +27,7 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Hero section */}
-      <div className='px-6 md:w-[1024px] md:mx-auto'>
+      <div className='px-4 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <Image
             src='/resume/hero-desktop.png'
@@ -37,7 +37,7 @@ export default async function ResumePage() {
             alt='Screenshots of the dashboard project showing desktop version'
           />
           <div className='w-full md:w-2/5 flex flex-col gap-8'>
-            <div className='text-4xl font-bold leading-[48px]'>
+            <div className='text-3xl md:text-4xl font-bold leading-[48px]'>
               Build app with Confidence
             </div>
             <div className={`${lusitana.className} text-md`}>
@@ -54,7 +54,7 @@ export default async function ResumePage() {
       </div>
       {/* Find me at */}
       <div className='bg-gray-100'>
-        <div className='p-6 w-full md:mx-auto md:max-w-[1024px]'>
+        <div className='px-4 py-8 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
           <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-x-24 gap-y-8'>
             <a
@@ -122,8 +122,8 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Frontend engineer */}
-      <div className='px-6 py-16 md:w-[1024px] md:mx-auto'>
-        <div className='pb-6 text-4xl font-bold leading-[48px]'>
+      <div className='px-4 py-6 md:py-16 md:w-[1024px] md:mx-auto'>
+        <div className='pb-6 text-3xl md:text-4xl font-bold leading-[48px]'>
           Front-end Engineer
         </div>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
@@ -180,7 +180,7 @@ export default async function ResumePage() {
       </div>
       {/* Education */}
       <div className='bg-gray-100'>
-        <div className='p-6 w-full md:mx-auto md:max-w-[1024px]'>
+        <div className='px-4 py-10 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold text-xl'>Education</div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-2/5'>
@@ -226,8 +226,10 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Awards */}
-      <div className='p-6 md:w-[1024px] md:mx-auto'>
-        <div className='text-2xl font-bold leading-[48px]'>Awards</div>
+      <div className='px-4 py-6 md:w-[1024px] md:mx-auto'>
+        <div className='pb-6 text-2xl md:text-3xl font-bold leading-[48px]'>
+          Awards
+        </div>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-3/5 flex flex-col gap-8'>
             <div
@@ -264,7 +266,7 @@ export default async function ResumePage() {
       </div>
       {/* Publications */}
       <div className='bg-gray-100'>
-        <div className='px-6 py-12 w-full md:mx-auto md:max-w-[1024px]'>
+        <div className='px-4 py-10 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='text-xl font-bold'>Publications</div>
           <div className='mt-8 flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-2/5 flex gap-8'>
@@ -321,7 +323,7 @@ export default async function ResumePage() {
         </div>
       </div>
       {/* Experiences */}
-      <div className='p-6 pt-12 md:w-[1024px] md:mx-auto'>
+      <div className='px-4 pt-8 md:pt-12 md:w-[1024px] md:mx-auto'>
         <div className='text-3xl font-bold'>Experiences</div>
         <div>
           <div className='relative wrap overflow-hidden pt-10 h-full'>
@@ -331,7 +333,7 @@ export default async function ResumePage() {
             ></div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 md:w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
+              <div className='mr-4 z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2024
                 </h1>
@@ -349,7 +351,7 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 md:w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
+              <div className='mr-4 z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2023
                 </h1>
@@ -370,7 +372,7 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 md:w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
+              <div className='mr-4 z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2021
                 </h1>
@@ -389,7 +391,7 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
               <div className='order-1 md:w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
+              <div className='mr-4 z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2019
                 </h1>
@@ -408,7 +410,7 @@ export default async function ResumePage() {
             </div>
             <div className='mb-8 flex justify-between items-center w-full right-timeline'>
               <div className='order-1 md:w-5/12'></div>
-              <div className='z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
+              <div className='mr-4 z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
                 <h1 className='mx-auto font-semibold text-lg text-white'>
                   2016
                 </h1>
