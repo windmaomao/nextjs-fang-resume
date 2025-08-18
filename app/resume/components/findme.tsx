@@ -1,4 +1,6 @@
-import * as motion from 'motion/react-client';
+'use client';
+
+import { motion, AnimatePresence, stagger } from 'motion/react';
 import Image from 'next/image';
 
 const socials = [
@@ -39,29 +41,49 @@ const socials = [
   },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: stagger(0.1),
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+
 export default function Findme() {
   return (
-    <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-x-24 gap-y-8'>
-      {socials.map((s) => (
-        <motion.a
-          key={s.name}
-          href={s.href}
-          target='_blank'
-          title={`${s.name} profile`}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ y: 10, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Image
-            src={s.src}
-            width={s.width}
-            height={s.height}
-            alt={`Contact ${s.name}`}
-          />
-        </motion.a>
-      ))}
-    </div>
+    <AnimatePresence>
+      <motion.div
+        className='my-7 flex flex-row flex-wrap justify-around items-center gap-x-24 gap-y-8'
+        variants={container}
+        initial='hidden'
+        animate='show'
+      >
+        {socials.map((s) => (
+          <motion.a
+            key={s.name}
+            href={s.href}
+            target='_blank'
+            title={`${s.name} profile`}
+            variants={item}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Image
+              src={s.src}
+              width={s.width}
+              height={s.height}
+              alt={`Contact ${s.name}`}
+            />
+          </motion.a>
+        ))}
+      </motion.div>
+    </AnimatePresence>
   );
 }
