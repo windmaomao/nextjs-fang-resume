@@ -2,6 +2,7 @@ import * as motion from 'motion/react-client';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Keyword from './keyword';
+import Counter from './counter';
 
 export default function Hero() {
   return (
@@ -29,15 +30,15 @@ export default function Hero() {
           Build app with Confidence
         </motion.div>
         <motion.div
-          className={`${lusitana.className} text-md`}
+          className={`${lusitana.className} text-lg`}
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.4 }}
         >
-          My name is Fang, 90% <Keyword>UI</Keyword> engineer and 10%{' '}
+          My name is Fang, <Counter max={90} duration={2} />%{' '}
+          <Keyword>UI</Keyword> engineer and <Counter max={10} />%{' '}
           <Keyword>UX</Keyword> designer. I craft websites and apps with care,
-          precision, and confidence. You can find me from the following social
-          media.
+          precision, and confidence.
         </motion.div>
       </div>
     </div>

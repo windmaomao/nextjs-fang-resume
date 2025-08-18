@@ -52,7 +52,7 @@ export default function Findme() {
           whileTap={{ scale: 0.95 }}
           initial={{ y: 10, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.2 }}
+          transition={{ duration: 0.2 }}
         >
           <Image
             src={s.src}
