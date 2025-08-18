@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
-import { Logo, Keyword, Hero } from './components';
+import { Logo, Keyword, Hero, Findme } from './components';
 
 export const metadata: Metadata = {
   title: 'Fang Jin',
@@ -18,7 +18,7 @@ export default async function ResumePage() {
       <div className='px-4 pt-6 md:w-[1024px] md:mx-auto'>
         <div className='flex justify-between flex-col sm:flex-row gap-4'>
           <Logo />
-          <div className='max-w-[400px] font-light text-[10px] text-gray-400 px-2'>
+          <div className='max-w-[400px] font-light text-[10px] text-gray-300 px-2'>
             React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
             Design Micro Frontend Architecture Storybook Cypress Testing
             Functional Programming
@@ -33,69 +33,7 @@ export default async function ResumePage() {
       <div className='bg-gray-100'>
         <div className='px-4 py-8 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
-          <div className='my-7 flex flex-row flex-wrap justify-around items-center gap-x-24 gap-y-8'>
-            <a
-              href='https://www.linkedin.com/in/windmaomao/'
-              target='_blank'
-              title='LinkedIn profile'
-            >
-              <Image
-                src='/resume/contact-linkedin.png'
-                width={93}
-                height={24}
-                alt='Contact Linkedin'
-              />
-            </a>
-            <a
-              href='https://medium.com/@windmaomao'
-              target='_blank'
-              title='Medium profile'
-            >
-              <Image
-                src='/resume/contact-medium.png'
-                width={90}
-                height={24}
-                alt='Contact Medium'
-              />
-            </a>
-            <a
-              href='https://www.amazon.com/stores/Fang-Jin/author/B09M7FFMJP'
-              target='_blank'
-              title='Amazon profile'
-            >
-              <Image
-                src='/resume/contact-amazon.png'
-                width={85}
-                height={36}
-                alt='Contact Amazon'
-                className='pt-2'
-              />
-            </a>
-            <a
-              href='https://codepen.io/windmaomao'
-              target='_blank'
-              title='Codepen profile'
-            >
-              <Image
-                src='/resume/contact-codepen.png'
-                width={106}
-                height={20}
-                alt='Contact Codepen'
-              />
-            </a>
-            <a
-              href='https://stackoverflow.com/users/288096/windmaomao'
-              target='_blank'
-              title='Stackoverflow profile'
-            >
-              <Image
-                src='/resume/contact-stackoverflow.png'
-                width={114}
-                height={30}
-                alt='Contact Stackoverflow'
-              />
-            </a>
-          </div>
+          <Findme />
         </div>
       </div>
       {/* Frontend engineer */}
