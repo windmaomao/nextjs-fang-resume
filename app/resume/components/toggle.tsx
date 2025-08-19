@@ -32,7 +32,7 @@ const Toggle = () => {
         }}
       >
         <FiAperture className='relative z-10 text-lg md:text-sm' />
-        <span className='relative z-10'>I'm interested</span>
+        <span className='relative z-10'>I&lsquo;m interested</span>
       </button>
       <div
         className={`absolute inset-0 z-0 flex ${
