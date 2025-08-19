@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { FiUser, FiAperture } from 'react-icons/fi';
+import { FiUser, FiThumbsUp } from 'react-icons/fi';
 
 const TOGGLE_CLASSES =
-  'text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-6 py-3 md:py-1.5 transition-colors relative z-10';
+  'text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3 py-3 md:py-1.5 transition-colors relative z-10';
 
 const Toggle = () => {
   const [selected, setSelected] = useState('light');
@@ -21,7 +21,7 @@ const Toggle = () => {
         }}
       >
         <FiUser className='relative z-10 text-lg md:text-sm' />
-        <span className='relative z-10'>Nice to meet you</span>
+        <span className='relative z-10'>Hi there!</span>
       </button>
       <button
         className={`${TOGGLE_CLASSES} ${
@@ -31,8 +31,8 @@ const Toggle = () => {
           setSelected('dark');
         }}
       >
-        <FiAperture className='relative z-10 text-lg md:text-sm' />
-        <span className='relative z-10'>I&lsquo;m interested</span>
+        <FiThumbsUp className='relative z-10 text-lg md:text-sm' />
+        <span className='relative z-10'>Interested</span>
       </button>
       <div
         className={`absolute inset-0 z-0 flex ${
