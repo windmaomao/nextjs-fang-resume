@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
-import { Logo, Keyword, Hero, Findme } from './components';
+import { Logo, Keyword, Hero, Findme, Reveal } from './components';
 
 export const metadata: Metadata = {
   title: 'Fang Jin',
@@ -33,65 +33,69 @@ export default async function ResumePage() {
       <div className='bg-gray-100'>
         <div className='px-4 py-8 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
-          <Findme />
+          <Reveal>
+            <Findme />
+          </Reveal>
         </div>
       </div>
       {/* Frontend engineer */}
       <div className='px-4 py-6 md:py-16 md:w-[1024px] md:mx-auto'>
-        <div className='pb-6 text-3xl md:text-4xl font-bold leading-[48px]'>
-          Front-end Engineer
-        </div>
-        <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
-          <div className='w-full sm:w-3/5 flex flex-col gap-8'>
-            <ul className={`${lusitana.className} text-md px-4 list-disc`}>
-              <li>
-                Specialize in <Keyword>Javascript</Keyword>,{' '}
-                <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>
-              </li>
-              <li>
-                Efficient and accurate work using <Keyword>Figma</Keyword>
-              </li>
-              <li>
-                Multiple regions or languages support with{' '}
-                <Keyword>i18n</Keyword>
-              </li>
-              <li>
-                Author of book: “Designing React Hooks the right way” sold at
-                amazon.
-              </li>
-              <li>Author of book: “Think in Recursion” sold at amazon.</li>
-              <li>
-                Familiar with state management systems ex.{' '}
-                <Keyword>Zustand</Keyword>, <Keyword>Redux</Keyword> and
-                <Keyword>React Query</Keyword>.
-              </li>
-              <li>
-                Create reusable UI library for the company design system (with
-                tokens generation)
-              </li>
-              <li>
-                Create custom dashboard charting using <Keyword>D3</Keyword>,{' '}
-                <Keyword>Visx</Keyword> that integrates with React
-              </li>
-              <li>
-                Provide technical oversight and guidance to teams, ensuring
-                alignment with project convention.
-              </li>
-              <li>
-                Extensive usage of <Keyword>Storybook</Keyword> with the
-                designer or shareholders on a daily basis to meet the design
-                requirement.
-              </li>
-            </ul>
+        <Reveal>
+          <div className='pb-6 text-3xl md:text-4xl font-bold leading-[48px]'>
+            Front-end Engineer
           </div>
-          <Image
-            src='/resume/frontend-engineer.png'
-            width={445}
-            height={318}
-            className='w-full sm:w-2/5'
-            alt='Screenshots of the dashboard project showing desktop version'
-          />
-        </div>
+          <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
+            <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+              <ul className={`${lusitana.className} text-md px-4 list-disc`}>
+                <li>
+                  Specialize in <Keyword>Javascript</Keyword>,{' '}
+                  <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>
+                </li>
+                <li>
+                  Efficient and accurate work using <Keyword>Figma</Keyword>
+                </li>
+                <li>
+                  Multiple regions or languages support with{' '}
+                  <Keyword>i18n</Keyword>
+                </li>
+                <li>
+                  Author of book: “Designing React Hooks the right way” sold at
+                  amazon.
+                </li>
+                <li>Author of book: “Think in Recursion” sold at amazon.</li>
+                <li>
+                  Familiar with state management systems ex.{' '}
+                  <Keyword>Zustand</Keyword>, <Keyword>Redux</Keyword> and
+                  <Keyword>React Query</Keyword>.
+                </li>
+                <li>
+                  Create reusable UI library for the company design system (with
+                  tokens generation)
+                </li>
+                <li>
+                  Create custom dashboard charting using <Keyword>D3</Keyword>,{' '}
+                  <Keyword>Visx</Keyword> that integrates with React
+                </li>
+                <li>
+                  Provide technical oversight and guidance to teams, ensuring
+                  alignment with project convention.
+                </li>
+                <li>
+                  Extensive usage of <Keyword>Storybook</Keyword> with the
+                  designer or shareholders on a daily basis to meet the design
+                  requirement.
+                </li>
+              </ul>
+            </div>
+            <Image
+              src='/resume/frontend-engineer.png'
+              width={445}
+              height={318}
+              className='w-full sm:w-2/5'
+              alt='Screenshots of the dashboard project showing desktop version'
+            />
+          </div>
+        </Reveal>
       </div>
       {/* Education */}
       <div className='bg-gray-100'>
@@ -112,7 +116,7 @@ export default async function ResumePage() {
                 />
               </a>
             </div>
-            <div className='w-full sm:w-3/5 flex flex-col gap-6'>
+            <Reveal className='w-full sm:w-3/5 flex flex-col gap-6'>
               <div className='font-semibold'>
                 <a
                   href='https://engineering.jhu.edu/chembe/'
@@ -136,7 +140,7 @@ export default async function ResumePage() {
                   breakage simulation and cancer research simulations.
                 </span>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>
@@ -146,7 +150,7 @@ export default async function ResumePage() {
           Awards
         </div>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
-          <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+          <Reveal className='w-full sm:w-3/5 flex flex-col gap-8'>
             <div
               className={`${lusitana.className} text-md flex flex-col gap-8`}
             >
@@ -162,7 +166,7 @@ export default async function ResumePage() {
               <p>Highly Commended Award Credit Suisse - Dec 2019</p>
               <p>Recognition Award Deutsche Bank - Jan 2017</p>
             </div>
-          </div>
+          </Reveal>
           <div className='w-full sm:w-2/5'>
             <a
               href='https://www.coursera.org/account/accomplishments/specialization/certificate/DRXGLEY7ZQZ6'
@@ -210,11 +214,11 @@ export default async function ResumePage() {
                 />
               </a>
             </div>
-            <div className='w-full sm:w-3/5 flex flex-col gap-8'>
+            <Reveal className='w-full sm:w-3/5 flex flex-col gap-8'>
               <div
                 className={`${lusitana.className} text-md flex flex-col gap-8`}
               >
-                <p>
+                <p className='text-lg font-semibold'>
                   <a
                     href='https://www.amazon.com/Think-Recursion-Algorithmic-Programming-algorithms-ebook/dp/B0DDH9TYYJ'
                     target='_blank'
@@ -233,117 +237,103 @@ export default async function ResumePage() {
                   </a>
                 </p>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>
       {/* Experiences */}
       <div className='px-4 pt-8 md:pt-12 md:w-[1024px] md:mx-auto'>
         <div className='text-3xl font-bold'>Experiences</div>
-        <div>
-          <div className='relative wrap overflow-hidden pt-10 h-full'>
-            <div
-              className='hidden md:block border-2-2 absolute border-opacity-20 border-gray-700 h-full border'
-              style={{ left: '50%' }}
-            ></div>
-            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
-              <div className='order-1 md:w-5/12'></div>
-              <div className='mr-4 z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>
-                  2024
-                </h1>
-              </div>
-              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
-                  Material Bank (Series-D Startup)
-                </h3>
-                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
-                  React developer for Amazon like E-commerce site
-                </p>
-                <h4 className='mt-2 font-semibold'>Senior Frontend Engineer</h4>
-                <h4 className='mt-2 text-sm font-light'>Aug 2024 - Aug 2025</h4>
-              </div>
+        <Reveal className='relative wrap overflow-hidden pt-10 h-full'>
+          <div
+            className='hidden md:block border-2-2 absolute border-opacity-20 border-gray-700 h-full border'
+            style={{ left: '50%' }}
+          ></div>
+          <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+            <div className='order-1 md:w-5/12'></div>
+            <div className='mr-4 z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
+              <h1 className='mx-auto font-semibold text-lg text-white'>2024</h1>
             </div>
-            <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
-              <div className='order-1 md:w-5/12'></div>
-              <div className='mr-4 z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>
-                  2023
-                </h1>
-              </div>
-              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
-                  Pearson (Publisher)
-                </h3>
-                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
-                  React/nextJS lead developer/architect for pearson e-commerce
-                  sites.
-                </p>
-                <h4 className='mt-2 font-semibold'>
-                  Senior Front End Engineer
-                </h4>
-                <h4 className='mt-2 text-sm font-light'>Mar 2023 - May 2024</h4>
-              </div>
-            </div>
-            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
-              <div className='order-1 md:w-5/12'></div>
-              <div className='mr-4 z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>
-                  2021
-                </h1>
-              </div>
-              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
-                  PhysIQ (Series-C startup)
-                </h3>
-                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
-                  React lead developer for a clinical web portal for collecting
-                  real-time medical data from a physical device.
-                </p>
-                <h4 className='mt-2 font-semibold'>Staff Software Engineer</h4>
-                <h4 className='mt-2 text-sm font-light'>Jun 2021 - Jan 2023</h4>
-              </div>
-            </div>
-            <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
-              <div className='order-1 md:w-5/12'></div>
-              <div className='mr-4 z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>
-                  2019
-                </h1>
-              </div>
-              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
-                  Credit Suisse (Bank)
-                </h3>
-                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
-                  Lead and manager of team for React based compliance website,
-                  mainly focus on reusability and scalability.
-                </p>
-                <h4 className='mt-2 font-semibold'>AVP, Senior Frontend</h4>
-                <h4 className='mt-2 text-sm font-light'>Jan 2019 - Jun 2021</h4>
-              </div>
-            </div>
-            <div className='mb-8 flex justify-between items-center w-full right-timeline'>
-              <div className='order-1 md:w-5/12'></div>
-              <div className='mr-4 z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
-                <h1 className='mx-auto font-semibold text-lg text-white'>
-                  2016
-                </h1>
-              </div>
-              <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-                <h3 className='mb-3 font-bold text-gray-800 text-lg'>
-                  Deutsche Bank
-                </h3>
-                <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
-                  UI and Angular architect in Market Clearing domain for 45+
-                  banking applications.
-                </p>
-                <h4 className='mt-2 font-semibold'>Senior Frontend</h4>
-                <h4 className='mt-2 text-sm font-light'>Sep 2016 - Aug 2018</h4>
-              </div>
+            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+                Material Bank (Series-D Startup)
+              </h3>
+              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                React developer for Amazon like E-commerce site
+              </p>
+              <h4 className='mt-2 font-semibold'>Senior Frontend Engineer</h4>
+              <h4 className='mt-2 text-sm font-light'>Aug 2024 - Aug 2025</h4>
             </div>
           </div>
-        </div>
+          <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
+            <div className='order-1 md:w-5/12'></div>
+            <div className='mr-4 z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
+              <h1 className='mx-auto font-semibold text-lg text-white'>2023</h1>
+            </div>
+            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+                Pearson (Publisher)
+              </h3>
+              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                React/nextJS lead developer/architect for pearson e-commerce
+                sites.
+              </p>
+              <h4 className='mt-2 font-semibold'>Senior Front End Engineer</h4>
+              <h4 className='mt-2 text-sm font-light'>Mar 2023 - May 2024</h4>
+            </div>
+          </div>
+          <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+            <div className='order-1 md:w-5/12'></div>
+            <div className='mr-4 z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
+              <h1 className='mx-auto font-semibold text-lg text-white'>2021</h1>
+            </div>
+            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+                PhysIQ (Series-C startup)
+              </h3>
+              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                React lead developer for a clinical web portal for collecting
+                real-time medical data from a physical device.
+              </p>
+              <h4 className='mt-2 font-semibold'>Staff Software Engineer</h4>
+              <h4 className='mt-2 text-sm font-light'>Jun 2021 - Jan 2023</h4>
+            </div>
+          </div>
+          <div className='mb-8 flex justify-between md:flex-row-reverse items-center w-full left-timeline'>
+            <div className='order-1 md:w-5/12'></div>
+            <div className='mr-4 z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
+              <h1 className='mx-auto font-semibold text-lg text-white'>2019</h1>
+            </div>
+            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+                Credit Suisse (Bank)
+              </h3>
+              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                Lead and manager of team for React based compliance website,
+                mainly focus on reusability and scalability.
+              </p>
+              <h4 className='mt-2 font-semibold'>AVP, Senior Frontend</h4>
+              <h4 className='mt-2 text-sm font-light'>Jan 2019 - Jun 2021</h4>
+            </div>
+          </div>
+          <div className='mb-8 flex justify-between items-center w-full right-timeline'>
+            <div className='order-1 md:w-5/12'></div>
+            <div className='mr-4 z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
+              <h1 className='mx-auto font-semibold text-lg text-white'>2016</h1>
+            </div>
+            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+                Deutsche Bank
+              </h3>
+              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+                UI and Angular architect in Market Clearing domain for 45+
+                banking applications.
+              </p>
+              <h4 className='mt-2 font-semibold'>Senior Frontend</h4>
+              <h4 className='mt-2 text-sm font-light'>Sep 2016 - Aug 2018</h4>
+            </div>
+          </div>
+        </Reveal>
       </div>
       {/* <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
@@ -387,13 +377,7 @@ export default async function ResumePage() {
       </div> */}
       {/* Say bye */}
       <div className='pb-12 md:max-w-[1024px] md:mx-auto'>
-        <div className='flex flex-col items-center gap-8'>
-          {/* <p className='font-light text-sm'>From scratch</p>
-          <div className='flex flex-col items-center gap-3 font-semibold text-3xl'>
-            <span>Want To Know How To</span>
-            <span>Turn Your Idea</span>
-            <span>Into A Product</span>
-          </div> */}
+        <Reveal className='flex flex-col items-center gap-8'>
           <Image
             src='/resume/build-product.jpg'
             width={644}
@@ -403,7 +387,7 @@ export default async function ResumePage() {
           <p className='text-sm text-gray-400 font-light text-center py-4'>
             See ya and nice to see you this far...
           </p>
-        </div>
+        </Reveal>
       </div>
       {/* Footer */}
       {/* <div className='p-6 md:w-[1024px] md:mx-auto'>
