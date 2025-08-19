@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import Keyword from './keyword';
 import Counter from './counter';
+import Toggle from './toggle';
+import Reveal from './reveal';
 
 export default function Hero() {
   return (
@@ -20,27 +22,18 @@ export default function Hero() {
           alt='Screenshots of the dashboard project showing desktop version'
         />
       </motion.div>
-      <div className='w-full md:w-2/5 flex flex-col gap-8'>
-        <motion.div
-          className='text-3xl md:text-4xl font-bold leading-[48px]'
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-        >
+      <Reveal className='w-full md:w-2/5 flex flex-col gap-8'>
+        <div className='text-3xl md:text-4xl font-bold leading-[48px]'>
           Build app with Confidence
-        </motion.div>
-        <motion.div
-          className={`${lusitana.className} text-lg`}
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
-        >
+        </div>
+        <div className={`${lusitana.className} text-lg`}>
           My name is Fang, <Counter max={90} duration={2} />%{' '}
           <Keyword>UI</Keyword> engineer and <Counter max={10} />%{' '}
           <Keyword>UX</Keyword> designer. I craft websites and apps with care,
           precision, and confidence.
-        </motion.div>
-      </div>
+        </div>
+        <Toggle />
+      </Reveal>
     </div>
   );
 }
