@@ -7,6 +7,7 @@ export default function Progress() {
 
   return (
     <motion.div
+      className='bg-sky-800'
       id='scroll-indicator'
       style={{
         scaleX: scrollYProgress,
@@ -17,7 +18,6 @@ export default function Progress() {
         right: 0,
         height: 5,
         originX: 0,
-        backgroundColor: 'lightgray',
       }}
     />
   );

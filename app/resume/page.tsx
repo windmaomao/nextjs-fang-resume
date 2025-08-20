@@ -15,8 +15,8 @@ export default async function ResumePage() {
   return (
     <div className='flex flex-col gap-6'>
       {/* Logo and menu */}
-      <div className='px-4 py-6 md:w-[1024px] md:mx-auto sticky top-0 bg-white'>
-        <div className='flex justify-between flex-col sm:flex-row gap-4'>
+      <div className='sticky top-0 bg-white'>
+        <div className='px-4 py-6 md:w-[1024px] md:mx-auto flex justify-between flex-col sm:flex-row gap-4'>
           <Logo />
           <div className='max-w-[400px] font-light text-[10px] text-gray-300 px-2'>
             React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
