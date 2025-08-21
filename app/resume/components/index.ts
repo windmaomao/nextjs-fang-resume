@@ -5,5 +5,6 @@ import Findme from './findme';
 import Counter from './counter';
 import Reveal from './reveal';
 import Toggle from './toggle';
+import Header from './header';
 
-export { Logo, Keyword, Hero, Findme, Counter, Reveal, Toggle };
+export { Logo, Keyword, Hero, Findme, Counter, Reveal, Toggle, Header };

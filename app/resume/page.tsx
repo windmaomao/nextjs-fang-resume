@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
-import { Logo, Keyword, Hero, Findme, Reveal } from './components';
+import { Header, Keyword, Hero, Findme, Reveal } from './components';
 
 export const metadata: Metadata = {
   title: 'Fang Jin',
@@ -13,18 +13,9 @@ export const metadata: Metadata = {
 
 export default async function ResumePage() {
   return (
-    <div className='flex flex-col gap-6'>
-      {/* Logo and menu */}
-      <div className='z-[9999] sticky top-0 bg-white'>
-        <div className='px-4 py-6 md:w-[1024px] md:mx-auto flex justify-between flex-col sm:flex-row gap-4'>
-          <Logo />
-          <div className='max-w-[400px] font-light text-[10px] text-gray-300 px-2'>
-            React NextJS JavaScript TypeScript Figma CSS Tailwind NodeJS UI/UX
-            Design Micro Frontend Architecture Storybook Cypress Testing
-            Functional Programming
-          </div>
-        </div>
-      </div>
+    <div className='flex flex-col gap-6 h-full relative'>
+      {/* Sticky header */}
+      <Header />
       {/* Hero section */}
       <div className='px-4 md:w-[1024px] md:mx-auto'>
         <Hero />

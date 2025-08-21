@@ -1,7 +1,7 @@
 import * as motion from 'motion/react-client';
 import { FiGitBranch } from 'react-icons/fi';
 
-export default async function Logo() {
+export default function Logo() {
   return (
     <motion.div
       className='text-xl pl-2 pb-2 text-sky-800 flex items-center gap-2'
