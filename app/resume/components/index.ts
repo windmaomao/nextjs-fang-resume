@@ -6,5 +6,16 @@ import Counter from './counter';
 import Reveal from './reveal';
 import Toggle from './toggle';
 import Header from './header';
+import Tooltip from './tooltip';
 
-export { Logo, Keyword, Hero, Findme, Counter, Reveal, Toggle, Header };
+export {
+  Logo,
+  Keyword,
+  Hero,
+  Findme,
+  Counter,
+  Reveal,
+  Toggle,
+  Header,
+  Tooltip,
+};

@@ -1,4 +1,5 @@
 import * as motion from 'motion/react-client';
+import Tooltip from './tooltip';
 
 export default function Keyword({ children }: { children: string }) {
   return (
@@ -9,7 +10,7 @@ export default function Keyword({ children }: { children: string }) {
       initial={{ opacity: 0.3 }}
       whileInView={{ opacity: 1 }}
     >
-      {children}
+      <Tooltip tooltip={children}>{children}</Tooltip>
     </motion.span>
   );
 }

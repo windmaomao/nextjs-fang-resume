@@ -15,7 +15,7 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={lemonade.className}>
+    <div className={lemonade.className + ' isolate'}>
       <Progress />
       {children}
     </div>
