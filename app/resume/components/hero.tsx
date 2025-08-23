@@ -66,10 +66,10 @@ export default function Hero() {
         </div>
         <div className={`${lusitana.className} flex flex-col gap-4`}>
           <div className='text-lg'>
-            I'm <Counter max={90} duration={2} />% <Keyword>UI</Keyword>{' '}
-            engineer and <Counter max={10} />% <Keyword>UX</Keyword> designer. I
-            craft websites and apps with care, precision, and confidence. My
-            skills includes:
+            Fang is <Counter max={90} duration={2} />% <Keyword>UI</Keyword>{' '}
+            engineer and <Counter max={10} />% <Keyword>UX</Keyword> designer.
+            And he crafts websites and apps with care, precision, and
+            confidence.
           </div>
           <div className='grid grid-cols-2 gap-x-4 gap-y-1.5'>
             {skills.map(({ name, year, highlight }) => (

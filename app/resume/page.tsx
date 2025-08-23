@@ -17,7 +17,7 @@ export default async function ResumePage() {
       {/* Sticky header */}
       <Header />
       {/* Hero section */}
-      <div className='px-4 md:w-[1024px] md:mx-auto'>
+      <div className='px-4 pb-6 md:w-[1024px] md:mx-auto'>
         <Hero />
       </div>
       {/* Find me at */}
