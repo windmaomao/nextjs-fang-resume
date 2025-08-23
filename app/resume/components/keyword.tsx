@@ -1,7 +1,13 @@
 import * as motion from 'motion/react-client';
 import Tooltip from './tooltip';
 
-export default function Keyword({ children }: { children: string }) {
+export default function Keyword({
+  children,
+  tooltip,
+}: {
+  children: string;
+  tooltip?: string;
+}) {
   return (
     <motion.span
       key={children}
@@ -10,7 +16,7 @@ export default function Keyword({ children }: { children: string }) {
       initial={{ opacity: 0.3 }}
       whileInView={{ opacity: 1 }}
     >
-      <Tooltip tooltip={children}>{children}</Tooltip>
+      <Tooltip tooltip={tooltip || children}>{children}</Tooltip>
     </motion.span>
   );
 }
