@@ -71,7 +71,7 @@ export default function Hero() {
             And he crafts websites and apps with care, precision, and
             confidence.
           </div>
-          <div className='grid grid-cols-2 gap-x-4 gap-y-1.5'>
+          <div className='grid md:grid-cols-2 gap-x-6 gap-y-2'>
             {skills.map(({ name, year, highlight }) => (
               <Meter.Root
                 key={name}
@@ -86,7 +86,7 @@ export default function Hero() {
                 >
                   <Keyword tooltip={`${name}: ${year} years`}>{name}</Keyword>
                 </Meter.Label>
-                <Meter.Track className='col-span-2 block h-0.5 w-48 overflow-hidden bg-gray-100 shadow-[inset_0_0_0_1px] shadow-gray-200'>
+                <Meter.Track className='col-span-2 block h-0.5 w-full md:w-48 overflow-hidden bg-gray-100 shadow-[inset_0_0_0_1px] shadow-gray-200'>
                   <Meter.Indicator className='block bg-gradient-to-r from-violet-400 to-blue-400 transition-all duration-500' />
                 </Meter.Track>
               </Meter.Root>
