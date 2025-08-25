@@ -7,6 +7,7 @@ import Reveal from './reveal';
 import Toggle from './toggle';
 import Header from './header';
 import Tooltip from './tooltip';
+import Meter from './meter';
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   Toggle,
   Header,
   Tooltip,
+  Meter,
 };

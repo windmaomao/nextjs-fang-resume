@@ -1,20 +1,16 @@
 import * as motion from 'motion/react-client';
 import Image from 'next/image';
-import { Meter } from '@base-ui-components/react/meter';
 import { lusitana } from '@/app/ui/fonts';
 import Keyword from './keyword';
 import Counter from './counter';
 import Reveal from './reveal';
+import Meter from './meter';
 
 const skills = [
   {
     name: 'React',
     year: 7,
     highlight: true,
-  },
-  {
-    name: 'JavaScript',
-    year: 11,
   },
   {
     name: 'Typescript',
@@ -26,16 +22,12 @@ const skills = [
     year: 5,
   },
   {
-    name: 'CSS',
-    year: 9,
-  },
-  {
     name: 'Tailwind',
     year: 4,
   },
   {
     name: 'Figma',
-    year: 5,
+    year: 4,
   },
   {
     name: 'Storybook',
@@ -73,23 +65,13 @@ export default function Hero() {
           </div>
           <div className='grid md:grid-cols-2 gap-x-6 gap-y-2'>
             {skills.map(({ name, year, highlight }) => (
-              <Meter.Root
+              <Meter
                 key={name}
-                className='box-border'
                 value={year}
-                min={0}
-                max={10}
-              >
-                <Meter.Label
-                  className='text-sm font-medium text-gray-900'
-                  style={{ fontWeight: highlight ? '700' : '400' }}
-                >
-                  <Keyword tooltip={`${name}: ${year} years`}>{name}</Keyword>
-                </Meter.Label>
-                <Meter.Track className='col-span-2 block h-0.5 w-full md:w-48 overflow-hidden bg-gray-100 shadow-[inset_0_0_0_1px] shadow-gray-200'>
-                  <Meter.Indicator className='block bg-gradient-to-r from-violet-400 to-blue-400 transition-all duration-500' />
-                </Meter.Track>
-              </Meter.Root>
+                title={name}
+                highlight={highlight}
+                max={8}
+              />
             ))}
           </div>
         </div>
