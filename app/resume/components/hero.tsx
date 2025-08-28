@@ -56,7 +56,7 @@ export default function Hero() {
         <div className='text-3xl md:text-4xl font-bold leading-[48px]'>
           Build app with Confidence
         </div>
-        <div className={`${lusitana.className} flex flex-col gap-4`}>
+        <div className={`${lusitana.className} flex flex-col gap-8`}>
           <div className='text-lg'>
             Fang is <Counter max={90} duration={2} />% <Keyword>UI</Keyword>{' '}
             engineer and <Counter max={10} />% <Keyword>UX</Keyword> designer.
