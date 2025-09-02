@@ -63,7 +63,7 @@ export default function Hero() {
             And he crafts websites and apps with care, precision, and
             confidence.
           </div>
-          <div className='grid md:grid-cols-2 gap-x-6 gap-y-2'>
+          <div className='grid md:grid-cols-2 gap-x-6 gap-y-4'>
             {skills.map(({ name, year, highlight }) => (
               <Meter
                 key={name}
