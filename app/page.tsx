@@ -1,16 +1,22 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { Avatar } from '@base-ui-components/react/avatar';
+import * as motion from 'motion/react-client';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'fjin portfolio',
+  title: 'fjin online',
   description: 'Fang J. is a software engineer and a singer.',
 };
 
 export default function Page() {
+  // const router = useRouter();
+  // const onClick = () => {
+  //   router.push('/resume');
+  // };
+
   return (
-    <main className='min-h-screen flex-col bg-gradient-to-r from-violet-400 to-blue-400 flex gap-8'>
+    <main className='min-h-screen flex-col bg-gradient-to-r from-violet-400 to-blue-400 flex gap-4'>
       {/* Header */}
       <div className='p-6 flex items-center gap-4'>
         <Avatar.Root className='inline-flex size-16 items-center justify-center overflow-hidden rounded-full bg-gray-100 align-middle text-base font-medium text-black select-none'>
@@ -27,19 +33,29 @@ export default function Page() {
         <div className='text-lg font-bold text-white'>fjin.online</div>
       </div>
       {/* Coder/Singer */}
-      <div className='md:w-[1024px] md:mx-auto flex flex-col md:flex-row justify-between items-end gap-y-16'>
+      <div className='md:w-[1024px] md:mx-auto flex flex-col md:flex-row justify-between md:items-end gap-y-16'>
+        <motion.div
+          className='px-6 w-full flex flex-col md:flex-row gap-4 md:w-1/2 cursor-pointer'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Link href='/resume'>
+            <Image
+              src='/home/robot.png'
+              width={280}
+              height={280}
+              className='max-w-full'
+              alt='Screenshots of robot'
+            />
+          </Link>
+          <div className='text-2xl font-bold text-white'>
+            <Link href='/resume'>Coder</Link>
+          </div>
+        </motion.div>
         <div className='flex flex-col md:flex-row gap-4 md:w-1/2'>
-          <Image
-            src='/home/robot.png'
-            width={280}
-            height={280}
-            className='max-w-full'
-            alt='Screenshots of robot'
-          />
-          <div className='text-2xl font-bold text-white'>Coder</div>
-        </div>
-        <div className='flex flex-col md:flex-row gap-4 md:w-1/2'>
-          <div className='text-xl font-bold text-white'>Singer</div>
+          <div className='text-xl font-bold text-blue-300'>Singer</div>
           <Image
             src='/home/dance.png'
             width={320}
