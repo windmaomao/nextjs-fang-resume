@@ -10,15 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  // const router = useRouter();
-  // const onClick = () => {
-  //   router.push('/resume');
-  // };
-
   return (
-    <main className='min-h-screen flex-col bg-gradient-to-r from-violet-400 to-blue-400 flex gap-4'>
+    <main className='py-6 min-h-screen flex-col bg-gradient-to-r from-violet-400 to-blue-400 flex gap-8'>
       {/* Header */}
-      <div className='p-6 flex items-center gap-4'>
+      <div className='px-6 flex items-center gap-4'>
         <Avatar.Root className='inline-flex size-16 items-center justify-center overflow-hidden rounded-full bg-gray-100 align-middle text-base font-medium text-black select-none'>
           <Avatar.Image
             src='/resume/me.jpeg'
@@ -35,7 +30,7 @@ export default function Page() {
       {/* Coder/Singer */}
       <div className='md:w-[1024px] md:mx-auto flex flex-col md:flex-row justify-between md:items-end gap-y-16'>
         <motion.div
-          className='px-6 w-full flex flex-col md:flex-row gap-4 md:w-1/2 cursor-pointer'
+          className='px-6 w-full flex flex-col md:flex-row items-center md:items-end gap-x-2 gap-y-8 md:w-1/2 cursor-pointer'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           whileHover={{ scale: 1.1 }}
@@ -54,7 +49,7 @@ export default function Page() {
             <Link href='/resume'>Coder</Link>
           </div>
         </motion.div>
-        <div className='flex flex-col md:flex-row gap-4 md:w-1/2'>
+        <div className='px-6 w-full flex flex-col md:flex-row gap-4 md:w-1/2'>
           <div className='text-xl font-bold text-blue-300'>Singer</div>
           <Image
             src='/home/dance.png'
