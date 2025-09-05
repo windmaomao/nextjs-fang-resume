@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default async function ResumePage() {
   return (
-    <div className='flex flex-col gap-6 h-full relative'>
+    <main className='flex flex-col gap-6 h-full relative'>
       {/* Sticky header */}
       <Header />
       {/* Hero section */}
@@ -399,6 +399,6 @@ export default async function ResumePage() {
           </div>
         </div>
       </div> */}
-    </div>
+    </main>
   );
 }

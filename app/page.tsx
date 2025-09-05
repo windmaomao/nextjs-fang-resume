@@ -1,54 +1,51 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import AcmeLogo from '@/app/ui/acme-logo';
-import { lusitana } from '@/app/ui/fonts';
+import { Avatar } from '@base-ui-components/react/avatar';
 
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  title: 'fjin portfolio',
+  description: 'Fang J. is a software engineer and a singer.',
 };
 
 export default function Page() {
   return (
-    <main className='flex min-h-screen flex-col p-6'>
-      <div className='flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52'>
-        <AcmeLogo />
-      </div>
-      <div className='mt-4 flex grow flex-col gap-4 md:flex-row'>
-        <div className='flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20'>
-          <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-          >
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href='https://nextjs.org/learn/' className='text-blue-500'>
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
-          <Link
-            href='/login'
-            className='flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base'
-          >
-            <span>Log in</span> <ArrowRightIcon className='w-5 md:w-6' />
-          </Link>
-        </div>
-        <div className='flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12'>
-          <Image
-            src='/hero-desktop.png'
-            width={1000}
-            height={760}
-            className='hidden md:block'
-            alt='Screenshots of the dashboard project showing desktop version'
+    <main className='min-h-screen flex-col bg-gradient-to-r from-violet-400 to-blue-400 flex gap-8'>
+      {/* Header */}
+      <div className='p-6 flex items-center gap-4'>
+        <Avatar.Root className='inline-flex size-16 items-center justify-center overflow-hidden rounded-full bg-gray-100 align-middle text-base font-medium text-black select-none'>
+          <Avatar.Image
+            src='/resume/me.jpeg'
+            width='48'
+            height='48'
+            className='size-full object-cover'
           />
+          <Avatar.Fallback className='flex size-full items-center justify-center text-base'>
+            FJ
+          </Avatar.Fallback>
+        </Avatar.Root>
+        <div className='text-lg font-bold text-white'>fjin.online</div>
+      </div>
+      {/* Coder/Singer */}
+      <div className='md:w-[1024px] md:mx-auto flex flex-col md:flex-row justify-between items-end gap-y-16'>
+        <div className='flex flex-col md:flex-row gap-4 md:w-1/2'>
           <Image
-            src='/hero-mobile.png'
-            width={560}
-            height={620}
-            className='block md:hidden'
-            alt='Screenshots of the dashboard project showing mobile version'
+            src='/home/robot.png'
+            width={280}
+            height={280}
+            className='max-w-full'
+            alt='Screenshots of robot'
+          />
+          <div className='text-2xl font-bold text-white'>Coder</div>
+        </div>
+        <div className='flex flex-col md:flex-row gap-4 md:w-1/2'>
+          <div className='text-xl font-bold text-white'>Singer</div>
+          <Image
+            src='/home/dance.png'
+            width={320}
+            height={320}
+            className='max-w-full'
+            alt='Screenshots of robot'
           />
         </div>
       </div>
