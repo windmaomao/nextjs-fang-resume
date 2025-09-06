@@ -1,13 +1,7 @@
 import Image from 'next/image';
-import { Metadata } from 'next';
 import { Avatar } from '@base-ui-components/react/avatar';
 import * as motion from 'motion/react-client';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'fjin online',
-  description: 'Fang J. is a software engineer and a singer.',
-};
 
 export default function Page() {
   return (

@@ -3,12 +3,8 @@ import '@/app/ui/global.css';
 import { lemonade } from '@/app/ui/fonts';
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s',
-    default: 'Acme Dashboard',
-  },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  title: 'fjin online',
+  description: 'Fang J. is a software engineer and a singer.',
 };
 
 export default function RootLayout({
