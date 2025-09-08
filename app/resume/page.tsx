@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default async function ResumePage() {
   return (
-    <main className='flex flex-col gap-6 h-full relative'>
+    <main className='flex flex-col gap-6 h-full relative dark:bg-black dark:text-white'>
       {/* Sticky header */}
       <Header />
       {/* Hero section */}
@@ -21,7 +21,7 @@ export default async function ResumePage() {
         <Hero />
       </div>
       {/* Find me at */}
-      <div className='bg-gray-100'>
+      <div className='bg-gray-100 dark:bg-gray-900'>
         <div className='px-4 py-8 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold'>Find Me At</div>
           <Reveal>
@@ -82,14 +82,14 @@ export default async function ResumePage() {
               src='/resume/frontend-engineer.png'
               width={445}
               height={318}
-              className='w-full sm:w-2/5'
+              className='w-full sm:w-2/5 dark:invert'
               alt='Screenshots of the dashboard project showing desktop version'
             />
           </div>
         </Reveal>
       </div>
       {/* Education */}
-      <div className='bg-gray-100'>
+      <div className='bg-gray-100 dark:bg-gray-900'>
         <div className='px-4 py-10 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='font-bold text-xl'>Education</div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
@@ -104,6 +104,7 @@ export default async function ResumePage() {
                   width={434}
                   height={180}
                   alt='Screenshots of the user story project showing sophia profile'
+                  className='dark:invert'
                 />
               </a>
             </div>
@@ -169,13 +170,14 @@ export default async function ResumePage() {
                 width={518}
                 height={344}
                 alt='Screenshots of the dashboard project showing desktop version'
+                className='dark:invert'
               />
             </a>
           </div>
         </div>
       </div>
       {/* Publications */}
-      <div className='bg-gray-100'>
+      <div className='bg-gray-100 dark:bg-gray-900'>
         <div className='px-4 py-10 w-full md:mx-auto md:max-w-[1024px]'>
           <div className='text-xl font-bold'>Publications</div>
           <div className='mt-8 flex flex-col sm:flex-row justify-around items-center gap-8'>
@@ -243,13 +245,15 @@ export default async function ResumePage() {
           <div className='mb-8 flex justify-between items-center w-full right-timeline'>
             <div className='order-1 md:w-5/12'></div>
             <div className='mr-4 z-20 flex items-center order-1 bg-gray-700 shadow-xl w-20 h-8 rounded-full'>
-              <h1 className='mx-auto font-semibold text-lg text-white'>2024</h1>
+              <h1 className='mx-auto font-semibold text-lg text-white dark:text-gray-500'>
+                2024
+              </h1>
             </div>
-            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
-              <h3 className='mb-3 font-bold text-gray-800 text-lg'>
+            <div className='order-1 bg-gray-100 dark:bg-gray-900 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+              <h3 className='mb-3 font-bold text-lg'>
                 Material Bank (Series-D Startup)
               </h3>
-              <p className='text-xs font-light leading-snug tracking-wide text-gray-900 text-opacity-100'>
+              <p className='text-xs font-light leading-snug tracking-wide text-opacity-100'>
                 React developer for Amazon like E-commerce site
               </p>
               <h4 className='mt-2 font-semibold'>Senior Frontend Engineer</h4>
@@ -261,7 +265,7 @@ export default async function ResumePage() {
             <div className='mr-4 z-20 flex items-center order-1 bg-gray-600 shadow-xl w-20 h-8 rounded-full'>
               <h1 className='mx-auto font-semibold text-lg text-white'>2023</h1>
             </div>
-            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+            <div className='order-1 bg-gray-100 dark:bg-gray-900 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
               <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                 Pearson (Publisher)
               </h3>
@@ -278,7 +282,7 @@ export default async function ResumePage() {
             <div className='mr-4 z-20 flex items-center order-1 bg-gray-500 shadow-xl w-20 h-8 rounded-full'>
               <h1 className='mx-auto font-semibold text-lg text-white'>2021</h1>
             </div>
-            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+            <div className='order-1 bg-gray-100 dark:bg-gray-900 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
               <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                 PhysIQ (Series-C startup)
               </h3>
@@ -295,7 +299,7 @@ export default async function ResumePage() {
             <div className='mr-4 z-20 flex items-center order-1 bg-gray-400 shadow-xl w-20 h-8 rounded-full'>
               <h1 className='mx-auto font-semibold text-lg text-white'>2019</h1>
             </div>
-            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+            <div className='order-1 bg-gray-100 dark:bg-gray-900 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
               <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                 Credit Suisse (Bank)
               </h3>
@@ -312,7 +316,7 @@ export default async function ResumePage() {
             <div className='mr-4 z-20 flex items-center order-1 bg-gray-300 shadow-xl w-20 h-8 rounded-full'>
               <h1 className='mx-auto font-semibold text-lg text-white'>2016</h1>
             </div>
-            <div className='order-1 bg-gray-100 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
+            <div className='order-1 bg-gray-100 dark:bg-gray-900 rounded-sm shadow-md w-9/12 md:w-5/12 px-6 py-4'>
               <h3 className='mb-3 font-bold text-gray-800 text-lg'>
                 Deutsche Bank
               </h3>
@@ -374,6 +378,7 @@ export default async function ResumePage() {
             width={644}
             height={322}
             alt='Screenshots of the build product picture with dad and daughter saying hi'
+            className='dark:invert'
           />
           <p className='text-sm text-gray-400 font-light text-center py-4'>
             See ya and nice to see you this far...

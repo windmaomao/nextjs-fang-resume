@@ -26,7 +26,7 @@ export default function CustomMeter({
 
   return (
     <Meter.Root className='box-border' value={value} min={min} max={max}>
-      <Meter.Label className='text-sm text-gray-900'>
+      <Meter.Label className='text-sm text-gray-900 dark:text-gray-100'>
         <motion.div
           style={{ fontWeight: highlight ? '700' : '400' }}
           initial={{ y: 5, opacity: 0 }}

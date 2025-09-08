@@ -80,6 +80,7 @@ export default function Findme() {
               width={s.width}
               height={s.height}
               alt={`Contact ${s.name}`}
+              className='dark:invert'
             />
           </motion.a>
         ))}

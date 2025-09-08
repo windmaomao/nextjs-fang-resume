@@ -13,7 +13,7 @@ export default function CustomTooltip({
     <Tooltip.Provider>
       <div className='flex '>
         <Tooltip.Root>
-          <Tooltip.Trigger className='flex items-center justify-center rounded-sm text-gray-900 select-none hover:bg-gray-100 focus-visible:bg-none focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-blue-800 active:bg-gray-200 data-[popup-open]:bg-gray-100 focus-visible:[&:not(:hover)]:bg-transparent'>
+          <Tooltip.Trigger className='flex items-center justify-center rounded-sm text-gray-900 dark:text-gray-100 select-none hover:bg-gray-100 hover:dark:bg-gray-900 focus-visible:bg-none focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-blue-800 active:bg-gray-200 data-[popup-open]:bg-gray-100 focus-visible:[&:not(:hover)]:bg-transparent'>
             {children}
           </Tooltip.Trigger>
           <Tooltip.Portal>

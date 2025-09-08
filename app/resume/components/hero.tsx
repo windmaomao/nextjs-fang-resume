@@ -50,6 +50,7 @@ export default function Hero() {
           width={690}
           height={459}
           alt='Screenshots of the dashboard project showing desktop version'
+          className='dark:invert'
         />
       </motion.div>
       <Reveal className='pb-6 w-full md:w-2/5 flex flex-col gap-8'>
