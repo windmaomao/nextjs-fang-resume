@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { lemonade } from '@/app/ui/fonts';
 import Progress from './progress';
 
 export const metadata: Metadata = {
@@ -15,7 +14,7 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={lemonade.className + ' isolate'}>
+    <div className='isolate'>
       <Progress />
       {children}
     </div>
