@@ -37,7 +37,7 @@ export default async function ResumePage() {
           </div>
           <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
             <div className='w-full sm:w-3/5 flex flex-col gap-8'>
-              <ul className={`${lusitana.className} text-md px-4 list-disc`}>
+              <ul className='font-lusitana text-md px-4 list-disc'>
                 <li>
                   Specialize in <Keyword>Javascript</Keyword>,{' '}
                   <Keyword>Typescript</Keyword>, and <Keyword>React</Keyword>

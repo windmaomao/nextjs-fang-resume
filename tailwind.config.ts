@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lemonade: 'Lemonada, Lemonada Fallback',
+        lusitana: 'Lusitana, Lusitana Fallback',
+      },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
