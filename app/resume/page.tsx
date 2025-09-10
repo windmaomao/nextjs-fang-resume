@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 import { Header, Keyword, Hero, Findme, Reveal } from './components';
+import MemoryGame from './memory-game';
 
 export const metadata: Metadata = {
   title: 'Fang Jin',
@@ -87,6 +88,29 @@ export default async function ResumePage() {
             />
           </div>
         </Reveal>
+      </div>
+      {/* Memory matching */}
+      <div className='px-6 py-10 bg-gradient-to-r from-blue-600 to-purple-500'>
+        <div className='md:w-[1024px] md:mx-auto flex flex-col sm:flex-row justify-around items-center gap-12'>
+          <div className='w-full sm:w-2/5 flex flex-col gap-4'>
+            <div className='text-white text-2xl font-semibold flex flex-col gap-4'>
+              <span>Take a break!</span>
+              <span>Have fun with a game.</span>
+            </div>
+            <div className='text-white text-sm font-light flex flex-col'>
+              <span>Pick two and make a match!</span>
+              <span>See how many turns you need to beat.</span>
+            </div>
+            <Image
+              src='/resume/memory-matching.jpg'
+              width={550}
+              height={506}
+              className='w-full sm:w-3/5'
+              alt='Screenshots of the dogs from memory matching game'
+            />
+          </div>
+          <MemoryGame />
+        </div>
       </div>
       {/* Education */}
       <div className='bg-gray-100 dark:bg-gray-900'>
@@ -330,6 +354,7 @@ export default async function ResumePage() {
           </div>
         </Reveal>
       </div>
+      {/* Research users */}
       {/* <div className='p-6 py-20 md:w-[1024px] md:mx-auto'>
         <div className='flex flex-col sm:flex-row justify-around items-center gap-8'>
           <div className='w-full sm:w-2/5 flex flex-col gap-4'>
@@ -348,28 +373,8 @@ export default async function ResumePage() {
             alt='Screenshots of the user story project showing sophia profile'
           />
         </div>
-      </div>
-      <div className='px-6 py-28 bg-gradient-to-r from-blue-600 to-purple-500'>
-        <div className='md:w-[1024px] md:mx-auto flex flex-col sm:flex-row justify-around items-center gap-12'>
-          <Image
-            src='/resume/prototype-workflow.png'
-            width={630}
-            height={441}
-            className='w-full sm:w-3/5'
-            alt='Screenshots of the prototype workflow showing a movie site project'
-          />
-          <div className='w-full sm:w-2/5 flex flex-col gap-4'>
-            <div className='text-white text-sm font-light'>
-              Prototype Workflow
-            </div>
-            <div className='text-white text-2xl font-semibold flex flex-col gap-4'>
-              <span>Design Functionalities</span>
-              <span>And Resolve User</span>
-              <span>Painpoints</span>
-            </div>
-          </div>
-        </div>
       </div> */}
+
       {/* Say bye */}
       <div className='pb-12 md:max-w-[1024px] md:mx-auto'>
         <Reveal className='flex flex-col items-center gap-8'>
