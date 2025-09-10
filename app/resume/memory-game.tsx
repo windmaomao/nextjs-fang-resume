@@ -11,8 +11,13 @@ const getApiUrl = () => {
   }
 };
 
+interface Card {
+  id: string;
+  url: string;
+}
+
 export default function MemoryGame() {
-  const [cards, setCards] = useState<any[]>([]);
+  const [cards, setCards] = useState<Card[]>([]);
   const [matched, setMatched] = useState<number[]>([]);
   const [currMatched, setCurrMatched] = useState<number[]>([]);
   const [matching, setMatching] = useState(false);
@@ -36,7 +41,7 @@ export default function MemoryGame() {
     if (matching) return;
     if (flipped(i)) return;
 
-    let curr = [...currMatched];
+    const curr = [...currMatched];
     if (curr.length < 2) {
       curr.push(i);
       setCurrMatched(curr);
@@ -86,7 +91,7 @@ export default function MemoryGame() {
         <span>{status === 'won' && 'You won!'}</span>
       </p>
       <div
-        className='p-1 grid grid-cols-4 gap-3 min-w-[340px] border-8 '
+        className='p-1 grid grid-cols-4 gap-3 min-w-[320px] border-8 '
         style={{
           pointerEvents: matching ? 'none' : 'auto',
           borderColor: status === 'won' ? '#3b65d0' : 'transparent',
@@ -106,7 +111,7 @@ export default function MemoryGame() {
 }
 
 type CardProps = {
-  image: any;
+  image: Card;
   flipped: boolean;
   onFlip: () => void;
 };
@@ -115,7 +120,7 @@ export const FlipCard = ({ image, flipped, onFlip }: CardProps) => {
   return (
     <div
       onClick={onFlip}
-      className='h-20 relative cursor-pointer bg-gray-200 rounded-sm'
+      className='h-16 relative cursor-pointer bg-gray-200 rounded-sm'
     >
       <div
         className='absolute w-full h-full transition-all'
