@@ -84,17 +84,20 @@ export default function MemoryGame() {
   };
 
   return (
-    <div className='flex flex-col gap-3'>
+    <div className='flex flex-col gap-3 relative z-0'>
+      <div className='absolute h-full w-full p-1'></div>
       <p className='text-white flex items-center justify-around'>
         <span>Turns: {turns + 1}</span>&nbsp;
         <Button onClick={onReset}>Restart</Button>
-        <span>{status === 'won' && 'You won!'}</span>
+        <span>{status === 'won' && 'You Won!'}</span>
       </p>
       <div
-        className='p-1 grid grid-cols-4 gap-3 min-w-[320px] border-8 '
+        className={
+          'p-2 grid grid-cols-4 gap-3 min-w-[320px]' +
+          (status === 'won' ? ' box' : '')
+        }
         style={{
           pointerEvents: matching ? 'none' : 'auto',
-          borderColor: status === 'won' ? '#3b65d0' : 'transparent',
         }}
       >
         {cards.map((image, i) => (
